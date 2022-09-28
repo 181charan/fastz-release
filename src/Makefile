@@ -101,7 +101,7 @@ incFiles = lastz.h infer_scores.h \
            utilities.h dna_utilities.h sequences.h capsule.h								  
 		   
 fastZsrcFiles = FastZ.cu
-fastZincFiles = bioio.h rapidcsv.h FastZ.h
+fastZincFiles = FastZ.h
 
 FastZ.o: FastZ.cu ${fastZincFiles}
 	${NVCC} -c  $< -o $@
